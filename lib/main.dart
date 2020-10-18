@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+// TODO: Change this link to desired location
+String url = "https://flutter.dev";
+
 void main() => runApp(WebApp());
 
 class WebApp extends StatelessWidget {
@@ -9,7 +12,7 @@ class WebApp extends StatelessWidget {
     return MaterialApp(
       home: SafeArea(
         child: WebView(
-          initialUrl: "https://flutter.dev",
+          initialUrl: url,
           javascriptMode: JavascriptMode.unrestricted,
         ),
       ),
